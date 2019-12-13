@@ -1,0 +1,19 @@
+main
+    power2 16384, 16384, 16384, 16384 ; both motors forward
+    pause 4000
+    power2 0, 16384, 0, 16384 ; both motors stopped
+    pause 4000
+    power2 -16384, 16384, -16384, 16384 ; both motors backwards
+    pause 4000
+    power2 0, 16384, 0, 16384 ; both motors stopped
+    pause 4000
+    power2 16384, 16384, -16384, 16384 ; motor 1 forward motor 2 backwards
+    pause 4000
+    power2 0, 16384, 0, 16384 ; both motors stopped
+    pause 4000
+    power2 -16384, 16384, 16384, 16384 ; motor 1 backwards motor 2 forward 
+    pause 4000
+    power2 0, 16384, 0, 16384 ; both motors stopped
+    pause 4000
+    goto main
+    
